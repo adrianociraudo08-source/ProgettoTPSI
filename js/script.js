@@ -1,34 +1,26 @@
 
-function Personaggio(nome,anno,ambito,sesso,nobel) 
-{
-    this.nome=nome;
-    this.anno=anno;
-    this.ambito=ambito;
-    this.sesso=sesso;
-    this.nobel=nobel;
-}
-let personaggi=
+let personaggi = 
 [
-    new Personaggio("Albert Einstein", 1879, "FISICA", "MASCHIO", true),
-    new Personaggio("Marie Curie", 1867, "CHIMICA", "FEMMINA", true),
-    new Personaggio("Isaac Newton", 1643, "FISICA", "MASCHIO", false),
-    new Personaggio("Galileo Galilei", 1564, "ASTRONOMIA", "MASCHIO", false),
-    new Personaggio("Charles Darwin", 1809, "BIOLOGIA", "MASCHIO", false),
-    new Personaggio("Nikola Tesla", 1856, "INGEGNERIA", "MASCHIO", false),
-    new Personaggio("Alan Turing", 1912, "INFORMATICA", "MASCHIO", false),
-    new Personaggio("Ada Lovelace", 1815, "INFORMATICA", "FEMMINA", false),
-    new Personaggio("Leonardo da Vinci", 1452, "INGEGNERIA", "MASCHIO", false),
-    new Personaggio("Stephen Hawking", 1942, "FISICA", "MASCHIO", false),
-    new Personaggio("Katherine Johnson", 1918, "MATEMATICA", "FEMMINA", false),
-    new Personaggio("Grace Hopper", 1906, "INFORMATICA", "FEMMINA", false),
-    new Personaggio("Tim Berners-Lee", 1955, "INFORMATICA", "MASCHIO", false),
-    new Personaggio("Jane Goodall", 1934, "BIOLOGIA", "FEMMINA", false),
-    new Personaggio("Elon Musk", 1971, "INGEGNERIA", "MASCHIO", false),
-    new Personaggio("Samantha Cristoforetti", 1977, "ASTRONOMIA", "FEMMINA", false),
-    new Personaggio("Margherita Hack", 1922, "ASTRONOMIA", "FEMMINA", false),
-    new Personaggio("Guglielmo Marconi", 1874, "INGEGNERIA", "MASCHIO", true),
-    new Personaggio("Rita Levi-Montalcini", 1909, "MEDICINA", "FEMMINA", true),
-    new Personaggio("Enrico Fermi", 1901, "FISICA", "MASCHIO", true),
+    { nome: "Albert Einstein", anno: 1879, ambito: "FISICA", sesso: "MASCHIO", nobel: true },
+    { nome: "Marie Curie", anno: 1867, ambito: "CHIMICA", sesso: "FEMMINA", nobel: true },
+    { nome: "Isaac Newton", anno: 1643, ambito: "FISICA", sesso: "MASCHIO", nobel: false },
+    { nome: "Galileo Galilei", anno: 1564, ambito: "ASTRONOMIA", sesso: "MASCHIO", nobel: false },
+    { nome: "Charles Darwin", anno: 1809, ambito: "BIOLOGIA", sesso: "MASCHIO", nobel: false },
+    { nome: "Nikola Tesla", anno: 1856, ambito: "INGEGNERIA", sesso: "MASCHIO", nobel: false },
+    { nome: "Alan Turing", anno: 1912, ambito: "INFORMATICA", sesso: "MASCHIO", nobel: false },
+    { nome: "Ada Lovelace", anno: 1815, ambito: "INFORMATICA", sesso: "FEMMINA", nobel: false },
+    { nome: "Leonardo da Vinci", anno: 1452, ambito: "INGEGNERIA", sesso: "MASCHIO", nobel: false },
+    { nome: "Stephen Hawking", anno: 1942, ambito: "FISICA", sesso: "MASCHIO", nobel: false },
+    { nome: "Katherine Johnson", anno: 1918, ambito: "MATEMATICA", sesso: "FEMMINA", nobel: false },
+    { nome: "Grace Hopper", anno: 1906, ambito: "INFORMATICA", sesso: "FEMMINA", nobel: false },
+    { nome: "Tim Berners-Lee", anno: 1955, ambito: "INFORMATICA", sesso: "MASCHIO", nobel: false },
+    { nome: "Jane Goodall", anno: 1934, ambito: "BIOLOGIA", sesso: "FEMMINA", nobel: false },
+    { nome: "Elon Musk", anno: 1971, ambito: "INGEGNERIA", sesso: "MASCHIO", nobel: false },
+    { nome: "Samantha Cristoforetti", anno: 1977, ambito: "ASTRONOMIA", sesso: "FEMMINA", nobel: false },
+    { nome: "Margherita Hack", anno: 1922, ambito: "ASTRONOMIA", sesso: "FEMMINA", nobel: false },
+    { nome: "Guglielmo Marconi", anno: 1874, ambito: "INGEGNERIA", sesso: "MASCHIO", nobel: true },
+    { nome: "Rita Levi-Montalcini", anno: 1909, ambito: "MEDICINA", sesso: "FEMMINA", nobel: true },
+    { nome: "Enrico Fermi", anno: 1901, ambito: "FISICA", sesso: "MASCHIO", nobel: true }
 ];
 
 let domande= 
@@ -43,8 +35,6 @@ let domande=
 let indice=0;
 let i=0;
 document.getElementById("testoDomande").textContent = domande[0];
-let testo="";
-let testo1="";
 function rispondi(risposta)
 {
     
